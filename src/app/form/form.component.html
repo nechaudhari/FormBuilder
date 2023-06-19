@@ -1,0 +1,8 @@
+<div class="container">
+  <h2 class="heading">My Form</h2>
+  <form [formGroup]="form">
+    <app-input-box formControlName="name"></app-input-box>
+    <app-dropdown formControlName="selectedOption"></app-dropdown>
+    <button type="submit" class="btn btn-success" (click)="submitForm()">Submit</button>
+  </form>
+</div>

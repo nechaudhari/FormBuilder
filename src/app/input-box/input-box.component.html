@@ -1,0 +1,7 @@
+<label class="label">This is input field</label>
+<input [(ngModel)]="inputValue" (blur)="validateInput()" class="text" />
+<div class="text-danger" *ngIf="isTouched && !inputValue" >
+  Please enter input
+</div>
+
+  
